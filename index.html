@@ -13,12 +13,17 @@
     <input type="text"  id="password" placeholder="password">
 <br><br>
 
-    <button onclick="test()">LOGIN</button>
+    <button onclick="login()">LOGIN</button>
 
     <script>
-      function test() {
-        alert("JAVASCRIPT IS WORKING");
-      }
+      function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if (username === "Bainess" && password === "1234") { window.location.href = "dashboard.html";                                                       
+      }  else {
+          alert("Wrong username or password!");
+      }      
     </script>
   </body>
 </html>
